@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoes.com</title>
+        <meta charset="UTF-8">
+        <meta name="Shoes" content="Nike">
+        <meta name="author" content="Kashyap Patel">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="registerStyle.css">
+    </head>
+    <body>
+        <section class="container">
+            
+            <div class="heading">
+                <h1>Just Do It.</h1>
+                <h3>Join the family by registering here.</h3>
+            </div>
+            <form action="../shoppingPage/shop.html" onsubmit="return validateForm()" novalidate >
+                <div class="inputs">
+                    <input type="text" id="fname" name="name" placeholder="   First Name" onblur="fnameCheck()">
+                    <label id="error1"></label>
+
+                    <input type="text" id="lname" name="name" placeholder="   Last Name" onblur="lnameCheck()">
+                    <label id="error2"></label>
+
+                    <input type="email" id="email" name="email" placeholder="   E-mail" onblur="emailCheck()">
+                    <label id="error3"></label>
+
+                    <input type="tel" id="phone" name="phone" placeholder="   Phone Number" onblur="phoneCheck()">
+                    <label id="error4"></label>
+
+                    <input type="password" id="pass" name="password" placeholder="   Password" onblur="passCheck()">
+                    <label id="error5"></label>
+
+                    <input type="password" id="c_pass" name="password" placeholder="   Confirm Password" onblur="c_passCheck()">
+                    <label id="error6"></label>
+
+                    <input type="checkbox" id="checkbox"  onchange="showpass()">
+                    
+                    <div class="btn">
+                        
+                        <input id="btn1" type="submit" value="Register">
+                        <input id="btn2" type="reset" value="Reset">
+                    </div> 
+                </div>
+            </form>
+        </section>
+        <script src="validation.js"></script>
+    </body>
+</html>
